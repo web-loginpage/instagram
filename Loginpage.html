@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 1px 20px -5px;
+            width: 350px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .logo {
+            margin: 20px auto;
+        }
+        .input-field {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            outline: none;
+            background-color: #fafafa;
+        }
+        .input-field:focus {
+            border-color: #a8a8a8;
+        }
+        .login-btn {
+            background: #0400ff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .login-btn:disabled {
+            background: #b2dffc;
+            cursor: not-allowed;
+        }
+        .login-btn:hover {
+            background: #00376b;
+            cursor: pointer;
+        }
+        .login-btn:enabled {
+            background: #b2dffc;
+            cursor: pointer;
+        }
+        .separator {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            color: #8e8e8e;
+            font-size: 14px;
+        }
+        .separator::before,
+        .separator::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #dbdbdb;
+        }
+        .separator span {
+            padding: 0 10px;
+        }
+        .facebook-login {
+            color: #385185;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .facebook-login:hover {
+            color: #385185;
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .forgot-password {
+            color: #00376b;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .forgot-password:hover {
+            color: #00376b;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+        .signup-container {
+            margin-top: 20px;
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+            border: 1px solid #dbdbdb;
+            background: white;
+            border-radius: 8px;
+        }
+        .signup-container a {
+            color: #0095f6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .signup-container a:hover {
+            color: #0095f6;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="logo" width="150"><br>
+        <img src="instagram.png" alt="Instagram logo" class="logo" width="150">
+        <input type="text" class="input-field" placeholder="Phone number, username, or email">
+        <input type="password" class="input-field" placeholder="Password">
+        <button class="login-btn" disabled>Log In</button>
+        <div class="separator"><span>OR</span></div>
+        <p class="facebook-login"><i class="fab fa-facebook-square"></i> Log in with Facebook</p>
+        <p class="forgot-password">Forgot password?</p>
+    </div>
+    <div class="signup-container">
+        Don't have an account? <a href="#">Sign up</a>
+    </div>
+</body>
+</html>
